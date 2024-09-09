@@ -79,13 +79,13 @@ target="_blank"> Ubuntu Server </a>
 - Tela de seleção de teclado
 <img src=selecionar_teclado.png width=1800 height=200>
 - Tela de tipo de instalação
-<img src=tipodeinstalação.png width=1800 height=200> 
+<img src=tipodeinstalacao.png width=1800 height=200> 
 - Tela de configuração de rede
 <img src=config_rede.png width=1800 height=200>
 - Tela de configuração do Proxy
 <img src=config_proxy.png width=1800 height=200>
 - Tela de pacotes de atualização
-<img src=pacote_atualização.png width=1800 height=200>
+<img src=tipodeinstalacao.png width=1800 height=200>
 - Tela de configuração do disco
 <img src=config_disco.png width=1800 height=200>
 - Tela layout do disco
@@ -95,10 +95,51 @@ target="_blank"> Ubuntu Server </a>
 - Tela de configuração do usuário
 <img src=config_do_usuario.png width=1800 height=200>
 - Tela de configuração do SSH
-<img src=configSSH.png width=2000 height=300>
+<img src=configSSH.png width=800 height=300>
 - Tela do fim da instalação
 <img src=fimdainstall.png width=1800 height=250>
 
+#### Atualização do Sistema 
+
+Para a correta utilização do servidor Ubuntu que acabamos de instalar, será necessário realizar a atualização do sistema.
+
+- Execute o comando abaixo:
+
+```
+sudo apt update -y && sudo apt upgrade -y
+```
+
+- Reinicie o seu servidor usando o comando abaixo:
+
+```
+reboot 
+```
+#### Instalação do Compilador NASM
+
+O compilador do NASM é uma ferramenta que nos permite programar em Assembly. Assim é possivel criar programas que manipulam dados que estão nos registradores do processador.
+
+- Para instalar o NASM no Ubuntu, usamos o comando:
+
+```
+sudo apt install nasm -y
+```
+#### Instalação do compilador da linguagem C
+
+Em Linux o compilador da lingugem C é o GCC. Ele é uma ferramenta importante para o desenvolvimento de programas em C.
+
+Para instalar o comando:
+```
+sudo apt install gcc -y
+```
+#### Conexão servidor e VScode via SSH
+
+Precisamos instalar uma extensão no VScode para acessar o nosso servidor de forma remota.
+
+!["Extensão SSH](extensaossh.png)
+
+Configuração do acesso remoto.
+
+!["Configuração](configurarextensao.png)
 
 
 
